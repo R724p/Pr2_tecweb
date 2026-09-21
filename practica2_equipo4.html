@@ -3,19 +3,38 @@
         <head>
             <meta charset="UTF-8">
             <title>Registro</title>
+        <link href="favicon-16x16.png" rel="icon" type="imgage/pnj">
         </head>
-        <body>
         <header>
             <h1 style="text-align: center;">REGISTRO DE DATOS GENERALES </h1><br>
             <h3 style="text-align: center;">Alumnos Nuevo Ingreso </h3><br>
             <h3 style="text-align: center;">(Enero 2027)</h3><br>
         </header>
-        
+        <body>
+        <section>
+        <form action = "mensaje.html" method = "get">
+            <fieldset>
+            <legend>Datos Personales:</legend>
+                <label for="boleta">Numero de Boleta:</label>
+                <input type="text" name="boleta" id="boleta" required placeholder="Ingrese solo numeros" pattern="{10}"><br>
+                <label for="normbre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Ingrese solo letras"><br>
+                <label for="apepat">Apellido Paterno:</label>
+                <input type="text" name="apepat" id="apepat" required><br>
+                <label for="apemat">Apellido Materno:</label>
+                <input type="text" name="apemat" id="apemat"><br>
+                <label for="naci">Fecha de Nacimiento:</label>
+                <input type="date" name="naci" id="naci" required><br>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="sexo">M
+                <input type="radio" name="sexo" id="sexo">F<br>
+            </fieldset>
+        </form>
+    </section>
 
         <section>
             <fieldset>
                 <form>
-
                      <label for="ua">Procedencia:</label>
                     <select name="ua" id="ua">
                         <option value="------">Selecciona una</option>
