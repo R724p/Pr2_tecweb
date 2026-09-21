@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name = "author" content = "MRJJ-">
+    <title>P2</title>
 </head>
 <body>
-    
+   <section>
+        <form action = "mensaje.html" method = "get">
+            <fieldset>
+            <legend>Datos Personales:</legend>
+                <label for="boleta">Numero de Boleta:</label>
+                <input type="text" name="boleta" id="boleta" required placeholder="Ingrese solo numeros" pattern="{10}"><br>
+                <label for="normbre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Ingrese solo letras"><br>
+                <label for="apepat">Apellido Paterno:</label>
+                <input type="text" name="apepat" id="apepat" required><br>
+                <label for="apemat">Apellido Materno:</label>
+                <input type="text" name="apemat" id="apemat"><br>
+                <label for="naci">Fecha de Nacimiento:</label>
+                <input type="date" name="naci" id="naci" required><br>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="sexo">M
+                <input type="radio" name="sexo" id="sexo">F<br>
+            </fieldset>
+        </form>
+    </section>
 </body>
 </html>
